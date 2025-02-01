@@ -7,9 +7,9 @@
 
     <title>Car glass darkening specialists
     </title>
-    <link rel="canonical" href="https://car-glass-darkening-specialists.vercel.app" />
+    <link rel="canonical" href="https://car-glass-darkening-specialists.vercel.app/" />
       <meta name="robots" content="index">
-      <link rel="icon" href="logo.png" type="image/x-icon">
+      <link rel="icon" href="https://car-glass-darkening-specialists.vercel.app/logo.png" type="image/x-icon">
      
   <script>
   (function(d,u) {
@@ -21,14 +21,13 @@
 </script>
   <style>
 :root {
-    --primary-color: #3a3d98; /* Royal Blue */
-    --secondary-color: #ffce00; /* Bright Yellow */
-    --text-color: #333333; /* Dark Charcoal */
+    --primary-color: #202124; /* Jet Black */
+    --secondary-color: #d4af37; /* Gold */
+    --text-color: #474747; /* Dim Gray */
     --light-bg: #fafafa; /* Light Gray */
     --white: #ffffff; /* White */
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Standard Shadow */
+    --shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.2); /* Bold Shadow */
 }
-
 
 
 * {
@@ -61,6 +60,136 @@ a {
 section {
     padding: 5rem 0;
 }
+
+ /*Menu Section style*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 9rem;
+    background: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+}
+
+.menu img {
+    max-width: 300px;
+    height: 150px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+.menu ul li {
+    margin: 0;
+    position: relative;
+    color: #000000;
+}
+
+.menu ul li a {
+    color: #ffffff; /* White color for text in the menu */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.menu ul li a:hover {
+    color: #d4af37; /* Gold color on hover */
+}
+
+/* Submenu Style */
+.menu ul li ul {
+    display: none; /* Hide submenus by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff; /* White background for submenu */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.menu ul li:hover > ul {
+    display: block; /* Show submenu on hover */
+}
+
+.menu ul li ul li {
+    padding: 0.5rem 0;
+}
+
+/* Submenu text color (dark color for visibility) */
+.menu ul li ul li a {
+    color: #000000; /* Black text color for submenu */
+    font-weight: normal; /* Optional: Reset font weight */
+}
+
+.menu ul li ul li a:hover {
+    color: #d4af37; /* Gold color on hover in submenu */
+}
+
+/*Blog Section */
+
+.blog-section {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .blog-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        .blog-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .blog-card p {
+            font-size: 1rem;
+            color: #474747;
+            margin-bottom: 1rem;
+        }
+
+        .blog-card a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .blog-card a:hover {
+            color: #0056b3;
+        }
+
+
 .header {
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     color: var(--white);
@@ -273,30 +402,50 @@ details p {
     padding-top: 2rem;
     border-top: 1px solid #374151;
 }
-.iframe-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
-}
-iframe {
-    border: none !important;
-    width: 600px;
-    height: 500px;
-}
+
 
 </style>
 </head>
 <body>
+       <!-- Menu Section with White Background -->
+       <div class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">Services</a>
+                <ul>
+                    <li><a href="#car-window-tinting">Car Window Tinting</a></li>
+                    <li><a href="#ceramic-coating">Ceramic Coating</a></li>
+                    <li><a href="#vinyl-wrapping">Vinyl Wrapping</a></li>
+                    <li><a href="#wheel-coating">Wheel Powder Coating</a></li>
+                    <li><a href="#paint-protection">Paint Protection Film</a></li>
+                </ul>
+            </li>
+        
+           
+        </ul>
+        <img src="https://car-glass-darkening-specialists.vercel.app/logo.png" alt="Logo">
+        <ul>
+        
+            <li><a href="#blog">Blogs</a>
+                <ul>
+                    <li><a href="https://car-glass-darkening-specialists.vercel.app/why-window-tinting-essential-drivers-waterford-twp">Why Window Tinting is Essential for Drivers in Waterford Township’s Climate</a></li>
+                    <li><a href="https://car-glass-darkening-specialists.vercel.app/how-window-tinting-improves-driving-comfort-waterford-twp">How Window Tinting in Waterford Township Improves Driving Comfort</a></li>
+                    <li><a href="https://car-glass-darkening-specialists.vercel.app/window-tinting-laws-michigan">Window Tinting Laws in Michigan</a></a></li>
+                  
+                
+                </ul>
+            </li>
+
+            <li><a href="https://car-glass-darkening-specialists.vercel.app/about-us">About Us</a></li>
+            <li><a href="https://car-glass-darkening-specialists.vercel.app/contact-us">Contact</a></li>
+        </ul>
+        
+    </div>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <h1>Enhance Your Comfort with Car Glass Darkening</h1><br>
             <p>Looking for privacy, <a href="https://sites.google.com/view/autoprotectionwaterfordtown/home">UV protection</a>, or simply a sleek new look for your car? Our expert car glass darkening services in Waterford Township provide high-quality tinting solutions that enhance both the appearance and functionality of your vehicle. Enjoy cooler interiors, added privacy, and improved protection from harmful UV rays. Get in touch today for a professional, durable glass darkening solution tailored to your needs.</p><br>
-            
-            
             
             
             <a href="tel:(248) 230-8858" class="cta-button">
@@ -385,196 +534,213 @@ iframe {
         </div>
 
         </section>
-    <!-- Additional Subheadings -->
-    <section id="additional-info" class="additional-info">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>What is Car Glass Darkening (Tinting)?</h2><br>
-                    <p>Car glass darkening, or window tinting, involves applying a thin, durable film to your vehicle’s windows to reduce the amount of sunlight entering the cabin. This film can be applied to both the windshield and side or rear windows, offering a variety of benefits.</p><br>
-                    <p>There are different tint levels available, allowing you to choose the right amount of darkness for your vehicle. Window tinting not only enhances your vehicle's aesthetic appeal but also offers practical advantages, such as temperature control, glare reduction, and UV protection.</p><br>
-                    
-                </div>
-
-                <div >
-            
-                    <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON0382-768x512.jpg" width="500" height="600">
-                        Car Window Tinting Waterford Township
-                    </iframe>
-                    
-                    
-                    
-                    
-                    
-                </div>
+ <!-- Additional Subheadings -->
+ <section id="additional-info" class="additional-info">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>What is Car Glass Darkening (Tinting)?</h2><br>
+                <p>Car glass darkening, or window tinting, involves applying a thin, durable film to your vehicle’s windows to reduce the amount of sunlight entering the cabin. This film can be applied to both the windshield and side or rear windows, offering a variety of benefits.</p><br>
+                <p>There are different tint levels available, allowing you to choose the right amount of darkness for your vehicle. Window tinting not only enhances your vehicle's aesthetic appeal but also offers practical advantages, such as temperature control, glare reduction, and UV protection.</p><br>
+                
             </div>
-            <br>      <br>
-            <div class="about-content">
-                <div class="about-image">
-                    <iframe src=https://prestigeprotectivefilm.com/wp-content/uploads/2024/04/SON0332-2-768x512.jpeg.webp" width="500" height="600">
-                        Car Window Tinting Waterford Township
 
-                    </iframe>
-                    
-                    
-                    
-                </div>
-                <div class="about-text">
-                    <h2>Benefits of Car Glass Darkening for Your Vehicle</h2><br>
-                    <p>Window tinting is more than just a cosmetic upgrade—it provides a wide range of benefits:</p><br>
-                    <ul>
-                      <li><strong>UV Protection:</strong> Window tints block up to 99% of harmful UV rays, protecting your skin from sun damage and preventing your car’s interior from fading.</li><br>
-                      <li><strong>Privacy and Security:</strong> Darkened windows offer increased privacy for you and your passengers, keeping your belongings out of sight from potential thieves.</li><br>
-                      <li><strong>Heat Reduction:</strong> Tinted windows help keep your vehicle cooler by reducing the amount of heat entering the car, making your ride more comfortable.</li><br>
-                      <li><strong>Glare Reduction:</strong> Window tinting minimizes glare from the sun and headlights, improving driving visibility and safety.</li><br>
-                      <li><strong>Aesthetic Appeal:</strong> Tinted windows give your vehicle a sleek, polished look, elevating its overall appearance.</li><br>
-                    </ul><br>
-                    <p>These benefits make car glass darkening an essential service for those looking to improve their driving experience and protect their vehicle.</p><br>
-                    
-                </div>
-            </div>
-        </div> </section>      <br>
-     
-    <br>
-        <section id="additional-info" class="additional-info"> <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Why Choose Professional Car Glass Darkening Services?</h2><br>
-                    <p>While DIY tinting kits are available, professional installation ensures the best results. Our experienced specialists use high-quality films and precision techniques to apply the tint to your vehicle’s windows. Professional tinting guarantees that the film is applied without bubbles, wrinkles, or peeling, and ensures optimal performance.</p><br>
-                    <p>Additionally, our experts can help you select the right tint shade for your needs, ensuring that the window film complies with local laws and regulations regarding tint darkness.</p><br>
-                    
-                    
-
-                </div>
-                <div class="about-image">
-                    <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON9919-4-768x512.jpg" width="500" height="600">
-                        Car Window Tinting Waterford Township
-                    </iframe>
-                    
-                    
-                    
-                </div>
-            </div><br>      <br>
-            <div class="about-content">
-                <div class="about-image">
-                    <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON0139-3-768x512.jpg" width="500" height="600">
-                        Car Window Tinting Waterford Township
-
-                    </iframe>
-                    
-                    
-                    
-                </div>
-                <div class="about-text">
-                    <h2>Affordable Car Glass Darkening Packages in Waterford Township</h2><br>
-                    <p>We offer a variety of affordable car glass darkening packages, from basic tinting to full-window applications. Whether you're looking for light tinting to reduce glare or a darker shade for privacy and heat reduction, we have options to fit your needs and budget.</p><br>
-                    <p>Our team works with you to determine the best tint level and film type for your vehicle, ensuring long-lasting results. With competitive pricing and high-quality service, our car glass darkening solutions are the perfect way to upgrade your vehicle.</p><br>
-                    
-                </div>
+            <div >
+        
+                <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON0382-768x512.jpg" width="500" height="600">
+                    Car Window Tinting Waterford Township
+                </iframe>
+                
+                
+                
+                
+                
             </div>
         </div>
-    </section>
-
-
-
-   
-
-    <!-- FAQ -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-list">
-              
-                <details>
-                    <summary>What is car glass darkening (window tinting)?</summary>
-                    <p>Car glass darkening, or window tinting, involves applying a film to your vehicle’s windows to reduce the amount of sunlight and UV rays entering the cabin.</p>
-                  </details>
+        <br>      <br>
+        <div class="about-content">
+            <div class="about-image">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0L-1ZJk-p6M?si=jltAOdwU_CLz9vXH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 
-                  <details>
-                    <summary>How long does window tinting last?</summary>
-                    <p>Window tinting can last 5-10 years with proper care, depending on the quality of the film and how well it's maintained.</p>
-                  </details>
                 
-                  <details>
-                    <summary>Will car window tinting affect my visibility while driving?</summary>
-                    <p>No, professional tinting is applied to enhance comfort and visibility. The film reduces glare while maintaining clear visibility for safe driving.</p>
-                  </details>
+            </div>
+            <div class="about-text">
+                <h2>Benefits of Car Glass Darkening for Your Vehicle</h2><br>
+                <p>Window tinting is more than just a cosmetic upgrade—it provides a wide range of benefits:</p><br>
+                <ul>
+                  <li><strong>UV Protection:</strong> Window tints block up to 99% of harmful UV rays, protecting your skin from sun damage and preventing your car’s interior from fading.</li><br>
+                  <li><strong>Privacy and Security:</strong> Darkened windows offer increased privacy for you and your passengers, keeping your belongings out of sight from potential thieves.</li><br>
+                  <li><strong>Heat Reduction:</strong> Tinted windows help keep your vehicle cooler by reducing the amount of heat entering the car, making your ride more comfortable.</li><br>
+                  <li><strong>Glare Reduction:</strong> Window tinting minimizes glare from the sun and headlights, improving driving visibility and safety.</li><br>
+                  <li><strong>Aesthetic Appeal:</strong> Tinted windows give your vehicle a sleek, polished look, elevating its overall appearance.</li><br>
+                </ul><br>
+                <p>These benefits make car glass darkening an essential service for those looking to improve their driving experience and protect their vehicle.</p><br>
                 
-                  <details>
-                    <summary>How dark can I tint my windows?</summary>
-                    <p>The darkness of the tint is determined by local laws. We help you choose a legal tint level that also meets your personal preferences.</p>
-                  </details>
-                
-                  <details>
-                    <summary>Can I remove or change the tint later?</summary>
-                    <p>Yes, tint can be removed or replaced if desired, but it’s best to have a professional handle the process to avoid damaging the glass.</p>
-                  </details>
-                
-                  <details>
-                    <summary>Is window tinting expensive?</summary>
-                    <p>No, we offer affordable tinting options for every budget. The cost depends on the type of film and the number of windows being tinted.</p>
-                  </details>
-                
-                  <details>
-                    <summary>Can I still roll down my windows after tinting?</summary>
-                    <p>Yes, but we recommend waiting 24-48 hours after installation to allow the tint to properly set and avoid damaging it.</p>
-                  </details>
-                
-                  <details>
-                    <summary>Does window tinting protect against UV rays?</summary>
-                    <p>Yes, window tinting blocks up to 99% of harmful UV rays, which helps protect your skin and prevent fading of your car’s interior.</p>
-                  </details>
-                
-                  
-                  
             </div>
         </div>
-    </section>
-<!-- Map Embed -->
-<section id="map" class="map" >
-    <div class="" id="location" align="center">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11740.29093523314!2d-83.334891!3d42.638618!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dd93cd6243c9%3A0x87e737c00c3875b7!2sPrestige%20Protective%20Films!5e0!3m2!1sen!2sus!4v1735836512912!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Car-window-</iframe>
-        
-        
-        
+    </div> </section>      <br>
+ 
+<br>
+    <section id="additional-info" class="additional-info"> <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Why Choose Professional Car Glass Darkening Services?</h2><br>
+                <p>While DIY tinting kits are available, professional installation ensures the best results. Our experienced specialists use high-quality films and precision techniques to apply the tint to your vehicle’s windows. Professional tinting guarantees that the film is applied without bubbles, wrinkles, or peeling, and ensures optimal performance.</p><br>
+                <p>Additionally, our experts can help you select the right tint shade for your needs, ensuring that the window film complies with local laws and regulations regarding tint darkness.</p><br>
+                
+                
+
+            </div>
+            <div class="about-image">
+                <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON9919-4-768x512.jpg" width="500" height="600">
+                    Car Window Tinting Waterford Township
+                </iframe>
+                
+                
+                
+            </div>
+        </div><br>      <br>
+        <div class="about-content">
+            <div class="about-image">
+                <iframe src="https://prestigeprotectivefilm.com/wp-content/uploads/2024/10/SON0139-3-768x512.jpg" width="500" height="600">
+                    Car Window Tinting Waterford Township
+
+                </iframe>
+                
+                
+                
+            </div>
+            <div class="about-text">
+                <h2>Affordable Car Glass Darkening Packages in Waterford Township</h2><br>
+                <p>We offer a variety of affordable car glass darkening packages, from basic tinting to full-window applications. Whether you're looking for light tinting to reduce glare or a darker shade for privacy and heat reduction, we have options to fit your needs and budget.</p><br>
+                <p>Our team works with you to determine the best tint level and film type for your vehicle, ensuring long-lasting results. With competitive pricing and high-quality service, our car glass darkening solutions are the perfect way to upgrade your vehicle.</p><br>
+                
+            </div>
+        </div>
     </div>
 </section>
 
+
+
+
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          
+            <details>
+                <summary>What is car glass darkening (window tinting)?</summary>
+                <p>Car glass darkening, or window tinting, involves applying a film to your vehicle’s windows to reduce the amount of sunlight and UV rays entering the cabin.</p>
+              </details>
+            
+              <details>
+                <summary>How long does window tinting last?</summary>
+                <p>Window tinting can last 5-10 years with proper care, depending on the quality of the film and how well it's maintained.</p>
+              </details>
+            
+              <details>
+                <summary>Will car window tinting affect my visibility while driving?</summary>
+                <p>No, professional tinting is applied to enhance comfort and visibility. The film reduces glare while maintaining clear visibility for safe driving.</p>
+              </details>
+            
+              <details>
+                <summary>How dark can I tint my windows?</summary>
+                <p>The darkness of the tint is determined by local laws. We help you choose a legal tint level that also meets your personal preferences.</p>
+              </details>
+            
+              <details>
+                <summary>Can I remove or change the tint later?</summary>
+                <p>Yes, tint can be removed or replaced if desired, but it’s best to have a professional handle the process to avoid damaging the glass.</p>
+              </details>
+            
+              <details>
+                <summary>Is window tinting expensive?</summary>
+                <p>No, we offer affordable tinting options for every budget. The cost depends on the type of film and the number of windows being tinted.</p>
+              </details>
+            
+              <details>
+                <summary>Can I still roll down my windows after tinting?</summary>
+                <p>Yes, but we recommend waiting 24-48 hours after installation to allow the tint to properly set and avoid damaging it.</p>
+              </details>
+            
+              <details>
+                <summary>Does window tinting protect against UV rays?</summary>
+                <p>Yes, window tinting blocks up to 99% of harmful UV rays, which helps protect your skin and prevent fading of your car’s interior.</p>
+              </details>
+            
+              
+              
+        </div>
+    </div>
+</section>
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="contact-info">
                     <h3>Contact Us</h3>
-                    <p><i data-lucide="map-pin"></i>2489 Elizabeth Lake Road #100, Waterford Township, Michigan 48328</p>
-                    <p><i data-lucide="phone"></i> (248) 230-8858</p>
-                   
+                    <p>2489 Elizabeth Lake Road #100, Waterford Township, Michigan 48328</p>
+                    <p> (248) 230-8858</p>
+                    <br>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/prestigeprotectivefilm/">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@fahadhalig">
+                            <i data-lucide="youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                    
+                        <a href="#">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
                 </div>
+
                 <div class="quick-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="https://ceramic-paint-sealant-experts.vercel.app">Ceramic paint sealant experts</a></li>
+                        <li><a href="https://car-glass-darkening-specialists.vercel.app/sitemap.xml">Site Map</a></li>
+                        <li><a href="https://car-glass-darkening-specialists.vercel.app/about-us">About Us</a></li>
+                        <li><a href="https://automotive-uv-protection-films-b617f9.gitlab.io">Automotive UV protection films</a></li>
                     </ul>
                 </div>
-                <div class="social-links">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
 
-                        <a href="https://www.instagram.com/prestigeprotectivefilm/"><i data-lucide="instagram"></i></a>
-                        <a href="https://www.youtube.com/@fahadhalig"><i data-lucide="youtube"></i></a>
+
+                <div class="quick-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Car Window Tinting</a></li>
+                        <li><a href="#services">Ceramic Coating</a></li>
+                        <li><a href="#services">Vinyl Wrapping</a></li>
+                        <li><a href="#services">Wheel Powder Coating</a></li>
+                        <li><a href="#services">Paint Protection Film</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3></h3>
+                    <div >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11740.29093523314!2d-83.334891!3d42.638618!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dd93cd6243c9%3A0x87e737c00c3875b7!2sPrestige%20Protective%20Films!5e0!3m2!1sen!2sus!4v1738392093095!5m2!1sen!2sus" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">window tinting</iframe>
                     </div>
                 </div>
                 
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Car glass darkening specialists in Waterford Township All rights reserved.</p>
+                <p>&copy; 2025 Car glass darkening specialists  in Waterford Township All rights reserved.</p>
+               
+                   
+                   
             </div>
+          
+     
         </div>
 
 </footer>
-
 <script>
     // Initialize Lucide icons
     lucide.createIcons();
